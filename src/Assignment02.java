@@ -1,13 +1,9 @@
-/*
- * Author: Hanna Felix
- * Lab Prof: Shavit Lupo
- * Date: November 25, 2022
- * Description: main method of inputing the value for the program
- */
+//ToDo: Supervisor wants programmer comments (use /* */ comment)
 
+//ToDo: Supervisor wants programmer comments (use /* */ comment)
 public class Assignment02 {
 
-	
+	//ToDo: Supervisor wants programmer comments (use /* */ comment)
 	public static void main(String[] args) {
 		CircularSawBlade blade = new CircularSawBlade();
 		String 	confirmation = "yes";
@@ -17,7 +13,7 @@ public class Assignment02 {
 		// (other variables as needed)
 		
 		
-		while(confirmation.equalsIgnoreCase("yes")){
+		while(confirmation.equals("yes")){
 			blade.setDiameter(User.inputPositiveDouble("Enter measure diameter: "));
 			blade.setKerf(User.inputPositiveDouble("Enter measure kerf: "));
 			
@@ -26,7 +22,7 @@ public class Assignment02 {
 			CircularSawBladeVerifier.isKerfInTolerance(blade);
 			
 			
-			System.out.println("Blades entered " + ++numberOfBlades);
+			System.out.println("Blades enetered " + ++numberOfBlades);
 			System.out.println("Diameter(s) out of tolerance:" + CircularSawBladeVerifier.notDi);
 			System.out.println("Kerf(s) out of tolerance:"+ CircularSawBladeVerifier.notKerf);
 			confirmation = User.inputString("Would you like to continue? (yes/no)");
@@ -34,9 +30,9 @@ public class Assignment02 {
 			System.out.println("Program by Hanna Felix");
 			
 		}
-		
 		System.out.println("Program shut down");
 
+		
 	}
 }
 
